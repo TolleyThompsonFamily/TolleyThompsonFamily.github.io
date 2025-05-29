@@ -1,0 +1,35 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+.*.swp
+.*.swo
+
+# Common Editor/IDE specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.project
+.settings/
+*.tmproj
+
+# Log files (less likely for a simple static site, but good to have)
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# If you were to ever use Node.js for local development tools (e.g., a local server, SASS)
+# you would uncomment the following line:
+# node_modules/
+
+# Any other specific files you want to ignore
+# my-local-notes.txt
