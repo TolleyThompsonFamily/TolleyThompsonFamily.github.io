@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to the Tolley☆Thompson Family History</title>
+
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'none';
+        style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+        img-src 'self' https://www.flickr.com https://live.staticflickr.com;
+        font-src 'self' https://fonts.gstatic.com;
+        connect-src 'none';
+        object-src 'none';
+        base-uri 'self';
+        form-action 'none';
+        frame-ancestors 'none';
+        upgrade-insecure-requests;
+    ">
+
     <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -11,33 +26,41 @@
             color: darkred;
             font-weight: bold;
             text-align: center;
-            background-image: url('https://live.staticflickr.com/65535/54556473643_128b7ea3be_s.jpg'); /* URL of background image*/
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center; /* Corrected */
+            /* TEMPORARY BACKGROUND: Replaces the background image */
+            background-color: #EAE0CF; /* A light, warm gray that resembles parchment */
+            /* IMPORTANT: The original background-image lines are commented out */
+            /* background-image: url('YOUR_NEW_HIGH_RES_DIRECT_FLICKR_IMAGE_URL_HERE'); */
+            /* background-size: cover; */
+            /* background-repeat: no-repeat; */
+            /* background-position: center center; */
             margin: 0;
             height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            position: relative; /* position:relative for .right-link to be absolute to body */
+            position: relative;
         }
 
         .title-container {
-            margin-top: 50px; /* This will apply if the div class is "title-container" */
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
         }
 
-        h1, h2 {
-            margin: 0;
-            line-height: 1.2; /* Adjust line height */
-        }
-
-        h1 {
-            font-size: 4em; /* 4em makes "WELCOME" large - Example of completed comment */
+        .arch-text-svg text {
+            fill: darkred;
+            font-family: 'UnifrakturCook', cursive;
+            font-size: 4em;
+            font-weight: bold;
         }
 
         h2 {
+            margin: 0;
+            line-height: 1.2;
             font-size: 2.5em;
         }
 
@@ -57,23 +80,31 @@
             text-decoration: underline;
         }
 
-        /* It's good practice to also style the footer if needed */
         footer {
-            position: absolute; /* Or use flexbox to position it at the bottom */
+            position: absolute;
             bottom: 10px;
             width: 100%;
-            font-size: 0.8em; /* Example styling */
+            font-size: 0.8em;
         }
 
     </style>
 </head>
 <body>
-    <div class="title-container"> <h1>WELCOME</h1>
+    <div class="title-container">
+        <svg viewBox="0 0 400 100" class="arch-text-svg">
+            <path id="welcomeArcPath" d="M 10 90 Q 200 10 390 90" fill="transparent"/>
+            <text>
+                <textPath href="#welcomeArcPath" startOffset="50%" text-anchor="middle">
+                    WELCOME
+                </textPath>
+            </text>
+        </svg>
+
         <h2>to the</h2>
         <h2>Tolley☆Thompson</h2> <h2>Family History</h2>
     </div>
 
-    <a href="#" class="right-link">Delbert N Tolley☆AKA Papa☆</a> 
+    <a href="#" class="right-link">Delbert N Tolley☆AKA Papa☆</a>
     <footer>
         <p>Copyright &copy; 2025 Earl Inscore Jr. and The Tolley Thompson Family. All Rights Reserved.</p>
     </footer>
