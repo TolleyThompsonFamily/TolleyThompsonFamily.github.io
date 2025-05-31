@@ -1,0 +1,65 @@
+body {
+    font-family: 'UnifrakturCook', cursive; /* Added fallback font */
+    color: darkred;
+    font-weight: bold;
+    text-align: center;
+    /* TEMPORARY BACKGROUND: Replaces the background image */
+    background-color: #EAE0CF; /* A light, warm gray that resembles parchment */
+    /* IMPORTANT: The original background-image lines are commented out */
+    /* background-image: url('YOUR_NEW_HIGH_RES_DIRECT_FLICKR_IMAGE_URL_HERE'); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center center; */
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.title-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.arch-text-svg text {
+    fill: darkred;
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+h2 {
+    margin: 0;
+    line-height: 1.2;
+    font-size: 2.5em;
+}
+
+.right-link {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: darkred;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.right-link:hover {
+    text-decoration: underline;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    font-size: 0.8em;
+}
