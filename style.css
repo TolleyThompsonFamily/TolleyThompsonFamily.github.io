@@ -63,3 +63,50 @@ footer {
     width: 100%;
     font-size: 0.8em;
 }
+
+/* The following is style formatting for the Delbert Newland Tolly webpage*/
+
+body.delbert-page {
+    font-family: 'Dancing Script', cursive; /* New cursive font */
+    color: #386641; /* Muted forest green font color */
+}
+
+/* Specific styling for lists on this page if needed, otherwise default ul/li will apply */
+body.delbert-page ul {
+    list-style-type: disc; /* Or 'none', 'circle', 'square' */
+    padding-left: 20px;
+    text-align: left; /* Align list items to the left */
+    max-width: 600px; /* Constrain width for readability */
+    margin: 20px auto; /* Center the list */
+}
+
+body.delbert-page ul li {
+    margin-bottom: 5px;
+}
+
+/* Adjust title-container styles if needed for the new page's titles */
+body.delbert-page .title-container h1 {
+    font-size: 3.5em; /* Adjust font size for the new main title if different from index.html's WELCOME */
+    margin-bottom: 10px;
+}
+
+body.delbert-page .title-container h2 {
+    font-size: 2em; /* Adjust font size for subheadings */
+    margin-top: 10px;
+}
+
+body.delbert-page h3 {
+    font-size: 2em; /* Styling for the new "Marriage Record" heading */
+    margin-top: 40px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Adjust paragraph styles for the new page */
+body.delbert-page p {
+    font-size: 1.2em; /* General paragraph font size */
+    line-height: 1.6;
+    max-width: 700px; /* Limit paragraph width for readability */
+    margin: 15px auto; /* Center paragraphs */
+    text-align: left; /* Align paragraphs to the left */
+}
