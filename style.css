@@ -3,10 +3,10 @@ body {
     color: darkred;
     font-weight: bold;
     text-align: center;
-    background-image: url('https://live.staticflickr.com/65535/54566895472_ef1bb87e80_b.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    background-image: url('https://picsum.photos/1920/1080'); /* TEMPORARY TEST IMAGE */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
     margin: 0;
     height: 100vh;
     display: flex;
