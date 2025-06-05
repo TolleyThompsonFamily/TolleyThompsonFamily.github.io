@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +8,7 @@
     <meta http-equiv="Content-Security-Policy" content="
         default-src 'self';
         script-src 'none';
-        style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; /* IMPORTANT: 'unsafe-inline' added here for embedded styles */
+        style-src 'self' https://fonts.googleapis.com; /* 'unsafe-inline' removed as styles are now external */
         img-src 'self' https://www.flickr.com https://live.staticflickr.com;
         font-src 'self' https://fonts.gstatic.com;
         connect-src 'none';
@@ -21,72 +20,8 @@
     ">
 
     <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
-    <style>
-        /* All your background styling goes directly in here */
-        body {
-            font-family: 'UnifrakturCook', cursive;
-            color: darkred;
-            font-weight: bold;
-            text-align: center;
-            background-image: url('./TolleyThompsonFamily/Tolly collage.png'); /* background image link */
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-
-        /* The rest of your styles from style.css for other elements */
-        .title-container {
-            margin-top: 50px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-        }
-
-        .arch-text-svg text {
-            fill: darkred;
-            font-family: 'UnifrakturCook', cursive;
-            font-size: 4em;
-            font-weight: bold;
-        }
-
-        h2 {
-            margin: 0;
-            line-height: 1.2;
-            font-size: 2.5em;
-        }
-
-        .right-link {
-            position: absolute;
-            right: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: darkred;
-            text-decoration: none;
-            font-size: 1.5em;
-            font-weight: bold;
-            white-space: nowrap;
-        }
-
-        .right-link:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            position: absolute;
-            bottom: 10px;
-            width: 100%;
-            font-size: 0.8em;
-        }
-    </style>
+    
+    <link rel="stylesheet" href="style.css"> 
 
 </head>
 <body>
