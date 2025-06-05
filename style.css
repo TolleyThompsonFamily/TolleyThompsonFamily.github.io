@@ -3,7 +3,7 @@ body {
     color: darkred;
     font-weight: bold;
     text-align: center;
-    background-image: url('./Tolley collage.png'); /* final main page background hosted in repository */
+    background-image: url('Images/Main/Tolley-Family-collage.jpg'); /* final main page background hosted in repository */
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
