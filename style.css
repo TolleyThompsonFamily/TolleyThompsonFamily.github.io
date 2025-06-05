@@ -3,7 +3,7 @@ body {
     color: darkred;
     font-weight: bold;
     text-align: center;
-    background-image: url('https://picsum.photos/1920/1080'); /* TEMPORARY TEST IMAGE */
+    background-image: url('."Tolley collage.png"'); /* final main page background hosted in repository */
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
