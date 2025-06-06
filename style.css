@@ -1,66 +1,40 @@
 body {
-    font-family: 'UnifrakturCook', cursive; /* Added fallback font */
-    color: darkred;
-    font-weight: bold;
-    text-align: center;
-    background-image: url('Images/Main/Tolley-Family-collage.jpg'); /* final main page background hosted in repository */
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-									background-attachment: fixed;
-    margin: 0;
-    height: 100vh;
+				 font-family: 'Dancing Script' , cursive;
+    /* ... other styles ... */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; /* This centers the title-container block */
     align-items: center;
-    position: relative;
+    /* ... other styles ... */
 }
 
+/* Make sure .title-container does NOT have display:flex here */
 .title-container {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    /* If you had margin-top: -100px; here to move the whole block, keep it.
+       If not, the whole block will be centered by the body. */
+    /* margin-top: -100px; */ /* <--- Optional: Uncomment/adjust if you want to move the *entire* title block */
 }
 
+.arch-text-svg {
+    display: block; /* Important for margin to work consistently */
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    /* This is the key line to move *just* the "WELCOME" SVG */
+    margin-top: -150px; /* <--- EXPERIMENT WITH THIS VALUE. Use negative for UP! */
+    margin-bottom: -30px; /* <--- Adjust space between WELCOME and "to the" (negative pulls closer) */
+}
+
+/* Also ensure your SVG text is styled correctly */
 .arch-text-svg text {
-    fill: darkred;
-    font-family: 'UnifrakturCook', cursive;
+    font-family: 'Dancing Script', cursive;
     font-size: 4em;
+    fill: red;
     font-weight: bold;
 }
 
-h2 {
-    margin: 0;
-    line-height: 1.2;
-    font-size: 2.5em;
-}
+/* ... (h2 and .right-link styles remain the same) ... */
 
-.right-link {
-    position: absolute;
-    right: 30px;
-    top: 40%;
-    transform: translateY(-50%);
-    color: darkred;
-    text-decoration: none;
-    font-size: 1.5em;
-    font-weight: bold;
-    white-space: nowrap;
-}
-
-.right-link:hover {
-    text-decoration: underline;
-}
-
-footer {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    font-size: 0.8em;
-}
 
 /* The following is style formatting for the Delbert Newland Tolly webpage*/
 
