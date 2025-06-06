@@ -1,45 +1,85 @@
+/* style.css */
+
 body {
-    background-image: url('./ImagesM/Main/Tolley-Family-college.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    
-					
-	   font-family: 'Dancing Script' , cursive;
+    font-family: 'UnifrakturCook', cursive; /* Using UnifrakturCook, with cursive as a fallback */
+    color: darkred;
+    font-weight: bold; /* UnifrakturCook only has a bold weight (700) */
+    text-align: center; /* This helps center general text content like h2s */
+
+    /* Background Image Properties */
+    background-image: url('Images/Main/Tolley-Family-collage.jpg'); /* YOUR LOCAL IMAGE PATH */
+    background-size: cover;          /* Ensures the image covers the entire background */
+    background-repeat: no-repeat;    /* Prevents the image from repeating */
+    background-position: center center; /* Centers the background image */
+    background-attachment: fixed;    /* Locks the background image in place */
+
+    margin: 0;                       /* Removes default body margin */
+    height: 100vh;                   /* Ensures the body takes full viewport height */
+
+    /* Flexbox properties to center the *entire* title-container block */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* This centers the title-container block */
-    align-items: center;
-    /* ... other styles ... */
+    justify-content: center;   /* Centers content vertically within the body */
+    align-items: center;       /* Centers content horizontally within the body */
+    position: relative;        /* Needed for positioning the link */
 }
 
-/* Make sure .title-container does NOT have display:flex here */
 .title-container {
-    /* If you had margin-top: -100px; here to move the whole block, keep it.
-       If not, the whole block will be centered by the body. */
-    /* margin-top: -100px; */ /* <--- Optional: Uncomment/adjust if you want to move the *entire* title block */
+    /* This div wraps both the SVG and the h2s. It will be centered by the body's flexbox. */
+    /* Add a negative margin-top here if you want to shift the ENTIRE block up/down
+       relative to the body's vertical center. E.g., margin-top: -100px; */
+    /* Currently commented out, as we're relying on individual adjustments for SVG */
 }
 
 .arch-text-svg {
-    display: block; /* Important for margin to work consistently */
-    width: 100%;
-    height: auto;
-    overflow: visible;
-    /* This is the key line to move *just* the "WELCOME" SVG */
-    margin-top: -150px; /* <--- EXPERIMENT WITH THIS VALUE. Use negative for UP! */
-    margin-bottom: -30px; /* <--- Adjust space between WELCOME and "to the" (negative pulls closer) */
+    display: block; /* Important for margin to work consistently, treats SVG like a block element */
+    width: 100%;    /* Ensures SVG scales horizontally */
+    height: auto;   /* Maintains aspect ratio */
+    overflow: visible; /* Prevents text from being cut off if it extends beyond SVG bounds */
+
+    /* ADJUST THESE MARGINS TO MOVE JUST THE "WELCOME" SVG: */
+    margin-top: -150px;   /* Use negative value to pull "WELCOME" higher up the page */
+    margin-bottom: -30px; /* Use negative value to pull "to the" closer to "WELCOME" */
 }
 
-/* Also ensure your SVG text is styled correctly */
+/* Styling for the text *inside* the SVG */
 .arch-text-svg text {
-    font-family: 'Dancing Script', cursive;
-    font-size: 4em;
-    fill: red;
-    font-weight: bold;
+    font-family: 'UnifrakturCook', cursive; /* Apply your desired font */
+    font-size: 4em;                        /* Adjust font size for "WELCOME" */
+    fill: darkred;                         /* Set the color for "WELCOME" */
+    font-weight: bold;                     /* Apply bold weight */
 }
 
-/* ... (h2 and .right-link styles remain the same) ... */
+h2 {
+    margin: 0;        /* Remove default h2 top/bottom margins to control spacing precisely */
+    line-height: 1.2; /* Adjust line spacing between h2 lines */
+    font-size: 2.5em; /* Adjust font size for "to the", "Tolley Thompson", "Family History" */
+    padding: 0;       /* Ensure no extra padding */
+}
+
+/* Note: h1 is not used directly for text in your current structure,
+   as "WELCOME" is inside the SVG. Keeping this for completeness if needed elsewhere. */
+h1 {
+    margin: 0;
+    font-size: 4em;
+    line-height: 1.2;
+}
+
+.right-link {
+    position: absolute;   /* Allows precise positioning relative to the body */
+    right: 80px;          /* Distance from the right edge of the page */
+    top: 50%;             /* Starts at the vertical center */
+    transform: translateY(-50%); /* Adjusts to truly center vertically */
+    color: darkred;
+    text-decoration: none; /* Removes underline from link */
+    font-size: 1.5em;
+    font-weight: bold;
+    white-space: nowrap;   /* Prevents the link text from wrapping */
+}
+
+.right-link:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
 
 
 /* The following is style formatting for the Delbert Newland Tolly webpage*/
