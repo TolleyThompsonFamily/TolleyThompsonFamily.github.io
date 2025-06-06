@@ -1,12 +1,12 @@
 body {
-     
-     background-image: url('Images/Main/Tolley-Family-collage.jpg;/* Background image  line*/
-    	background-size: cover;
-					background-repeat: no-repeat;
-					background-position: center;
-					background-attachment: fixed;
+    background-image: url('./ImagesM/Main/Tolley-Family-college.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    
 					
-				font-family: 'Dancing Script' , cursive;
+	   font-family: 'Dancing Script' , cursive;
     display: flex;
     flex-direction: column;
     justify-content: center; /* This centers the title-container block */
