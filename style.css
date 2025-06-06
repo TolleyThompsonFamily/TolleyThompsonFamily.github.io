@@ -1,9 +1,9 @@
 /* style.css */
 
 body {
-    font-family: 'UnifrakturCook', cursive; /* Using UnifrakturCook, with cursive as a fallback */
-    color: darkred;
-    font-weight: bold; /* UnifrakturCook only has a bold weight (700) */
+    font-family: 'Dancing Script', cursive; /* Using Dancing Script, with cursive as a fallback */
+    color: red;
+    font-weight: bold; 
     text-align: center; /* This helps center general text content like h2s */
 
     /* Background Image Properties */
@@ -44,7 +44,7 @@ body {
 
 /* Styling for the text *inside* the SVG */
 .arch-text-svg text {
-    font-family: 'UnifrakturCook', cursive; /* Apply your desired font */
+    font-family: 'Dancing Script', cursive; /* Apply your desired font */
     font-size: 4em;                        /* Adjust font size for "WELCOME" */
     fill: darkred;                         /* Set the color for "WELCOME" */
     font-weight: bold;                     /* Apply bold weight */
