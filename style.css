@@ -7,6 +7,7 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
+									background-attachment: fixed;
     margin: 0;
     height: 100vh;
     display: flex;
@@ -17,7 +18,7 @@ body {
 }
 
 .title-container {
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,8 +41,8 @@ h2 {
 
 .right-link {
     position: absolute;
-    right: 20px;
-    top: 50%;
+    right: 30px;
+    top: 40%;
     transform: translateY(-50%);
     color: darkred;
     text-decoration: none;
