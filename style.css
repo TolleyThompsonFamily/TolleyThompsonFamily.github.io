@@ -67,8 +67,8 @@ h1 {
 
 .right-link {
     position: absolute;   /* Allows precise positioning relative to the body */
-    right: 100px;          /* Distance from the right edge of the page */
-    top: 50%;             /* Vertical position */
+    right: 10px;          /* Distance from the right edge of the page */
+    top: -50%;             /* Vertical position */
    /* transform: translateY(-50%);*/ /* Adjusts to truly center vertically */
     color: white;
     text-decoration: none; /* Removes underline from link */
