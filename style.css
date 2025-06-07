@@ -46,14 +46,14 @@ body {
 .arch-text-svg text {
     font-family: 'Dancing Script', cursive; /* Apply your desired font */
     font-size: 4em;                        /* Adjust font size for "WELCOME" */
-    fill: darkred;                         /* Set the color for "WELCOME" */
+    fill: blue;                         /* Set the color for "WELCOME" */
     font-weight: bold;                     /* Apply bold weight */
 }
 
 h2 {
     margin: 0;        /* Remove default h2 top/bottom margins to control spacing precisely */
     line-height: 1.2; /* Adjust line spacing between h2 lines */
-    font-size: 2.5em; /* Adjust font size for "to the", "Tolley Thompson", "Family History" */
+    font-size: 1.75em; /* Adjust font size for "to the", "Tolley Thompson", "Family History" */
     padding: 0;       /* Ensure no extra padding */
 }
 
@@ -67,12 +67,12 @@ h1 {
 
 .right-link {
     position: absolute;   /* Allows precise positioning relative to the body */
-    right: 80px;          /* Distance from the right edge of the page */
-    top: 50%;             /* Starts at the vertical center */
-    transform: translateY(-50%); /* Adjusts to truly center vertically */
-    color: darkred;
+    right: 100px;          /* Distance from the right edge of the page */
+    top: 50%;             /* Vertical position */
+   /* transform: translateY(-50%);*/ /* Adjusts to truly center vertically */
+    color: white;
     text-decoration: none; /* Removes underline from link */
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: bold;
     white-space: nowrap;   /* Prevents the link text from wrapping */
 }
