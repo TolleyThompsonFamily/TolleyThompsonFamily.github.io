@@ -36,7 +36,7 @@ body {
     overflow: visible; /* Prevents text from being cut off if it extends beyond SVG bounds */
 
     /* ADJUST THESE MARGINS TO MOVE JUST THE "WELCOME" SVG: */
-    margin-top: -50px;   /* Use negative value to pull "WELCOME" higher up the page */
+    margin-top: -30px;   /* Use negative value to pull "WELCOME" higher up the page */
     margin-bottom: -30px; /* Use negative value to pull "to the" closer to "WELCOME" */
 }
 
@@ -65,7 +65,7 @@ h1 {
 
 .right-link {
     position: absolute;   /* Allows precise positioning relative to the body */
-    right: 80px;          /* Distance from the right edge of the page */
+    right: 90px;          /* Distance from the right edge of the page */
     top: 20%;             /* Vertical position */
    transform: translateY(-50%);*/ /* Adjusts to truly center vertically
     color: lightgreen;
