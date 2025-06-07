@@ -52,7 +52,7 @@ body {
 
 h2 {
     margin: 0;        /* Remove default h2 top/bottom margins to control spacing precisely */
-    line-height: 1.2; /* Adjust line spacing between h2 lines */
+    line-height: 4.5; /* Adjust line spacing between h2 lines */
     font-size: 1.75em; /* Adjust font size for "to the", "Tolley Thompson", "Family History" */
     padding: 0;       /* Ensure no extra padding */
 }
@@ -61,16 +61,16 @@ h2 {
    as "WELCOME" is inside the SVG. Keeping this for completeness if needed elsewhere. */
 h1 {
     margin: 0;
-    font-size: 4em;
+    font-size: 5em;
     line-height: 1.2;
 }
 
 .right-link {
     position: absolute;   /* Allows precise positioning relative to the body */
-    right: 10px;          /* Distance from the right edge of the page */
-    top: -50%;             /* Vertical position */
-   /* transform: translateY(-50%);*/ /* Adjusts to truly center vertically */
-    color: white;
+    right: 80px;          /* Distance from the right edge of the page */
+    top: 20%;             /* Vertical position */
+   transform: translateY(-50%);*/ /* Adjusts to truly center vertically
+    color: lightgreen;
     text-decoration: none; /* Removes underline from link */
     font-size: 1em;
     font-weight: bold;
