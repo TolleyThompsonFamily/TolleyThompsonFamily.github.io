@@ -1,5 +1,3 @@
-/* style.css */
-
 body {
     font-family: 'Dancing Script', cursive; /* Using Dancing Script, with cursive as a fallback */
     color: red;
@@ -46,7 +44,7 @@ body {
 .arch-text-svg text {
     font-family: 'Dancing Script', cursive; /* Apply your desired font */
     font-size: 4em;                        /* Adjust font size for "WELCOME" */
-    fill: blue;                         /* Set the color for "WELCOME" */
+    fill: red;                         /* Set the color for "WELCOME" */
     font-weight: bold;                     /* Apply bold weight */
 }
 
